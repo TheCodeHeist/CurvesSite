@@ -10,7 +10,6 @@ $pitch-black-low-opac: #38383f7c;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  overflow: hidden;
   scroll-behavior: smooth;
   // background: url("./../assets/curvesStill.png");
   // background-repeat: no-repeat;
@@ -24,6 +23,7 @@ body {
   // background-position: bottom;
   // background-size: contain;
   background-color: #242429;
+  overflow-x: hidden;
 }
 
 nav {

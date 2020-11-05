@@ -5,12 +5,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #242429;
+  overflow-x: hidden;
 }
 
 nav {
