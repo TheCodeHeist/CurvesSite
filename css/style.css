@@ -158,8 +158,8 @@ header .fullscreen-vid-wrap {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -289,9 +289,6 @@ header #bg-video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -301,14 +298,12 @@ header #bg-video {
 
 #about p {
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1rem;
   line-height: 50px;
+  padding-left: 70px;
 }
 
 @media only screen and (max-width: 1440px) {
-  #about p {
-    font-size: 1.3rem;
-  }
   #downloads section.dl-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -328,16 +323,9 @@ header #bg-video {
     height: 15rem;
     border-radius: 20px;
   }
-  header #bg-video {
-    max-width: 100%;
-    max-height: 100%;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
-  #about p {
-    font-size: 1rem;
-  }
   #downloads p {
     font-size: 2.5rem;
   }
@@ -349,11 +337,17 @@ header #bg-video {
 }
 
 @media only screen and (max-width: 768px) {
+  #about {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   #about p {
     font-size: 0.9rem;
     line-height: 30px;
     margin: 10px 20px;
     text-align: center;
+    padding-left: 0;
   }
   #downloads p {
     font-size: 2.5rem;
