@@ -344,7 +344,6 @@ header #bg-video {
   #features section img,
   #features section.invert img {
     height: 10rem;
-    border-radius: 20px;
     margin-top: 40px;
   }
   #features section figure,
@@ -370,9 +369,7 @@ header #bg-video {
   #features section img,
   #features section.invert img {
     height: 10rem;
-    border-radius: 20px;
-    margin-top: 40px;
-    text-align: center;
+    margin-top: 30px;
   }
   #features section figure,
   #features section.invert figure {
@@ -380,11 +377,12 @@ header #bg-video {
   }
   #features section figure p,
   #features section.invert figure p {
-    font-size: 10px;
+    font-size: 20px;
   }
   #features section figure figcaption,
   #features section.invert figure figcaption {
     line-height: normal;
+    font-size: 15px;
   }
   header figure #header-logo {
     width: 5rem;

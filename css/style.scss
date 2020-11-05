@@ -335,7 +335,6 @@ header {
 
       img {
         height: 10rem;
-        border-radius: 20px;
         margin-top: 40px;
       }
 
@@ -371,20 +370,19 @@ header {
     section.invert {
       img {
         height: 10rem;
-        border-radius: 20px;
-        margin-top: 40px;
-        text-align: center;
+        margin-top: 30px;
       }
 
       figure {
         text-align: center;
 
         p {
-          font-size: 10px;
+          font-size: 20px;
         }
 
         figcaption{
           line-height: normal;
+          font-size: 15px;
         }
       }
     }
