@@ -350,6 +350,7 @@ header #bg-video {
   #features section figure,
   #features section.invert figure {
     text-align: center;
+    margin-top: none;
   }
   #features section figure p,
   #features section.invert figure p {
