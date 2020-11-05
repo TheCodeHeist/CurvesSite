@@ -17,6 +17,25 @@ $pitch-black-low-opac: #38383f7c;
   // background-size: cover;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+/* Handle on hover */
+
 body {
   // background: url("./../assets/curvesStillCropped.png");
   // background-repeat: no-repeat;

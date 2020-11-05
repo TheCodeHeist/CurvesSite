@@ -8,6 +8,25 @@
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2d9cdb;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Handle on hover */
 body {
   background-color: #242429;
   overflow-x: hidden;
