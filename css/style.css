@@ -343,8 +343,9 @@ header #bg-video {
   }
   #features section img,
   #features section.invert img {
-    height: 15rem;
+    height: 13rem;
     margin-top: 40px;
+    margin-right: 0;
   }
   #features section figure,
   #features section.invert figure {
@@ -380,7 +381,6 @@ header #bg-video {
   }
   #features section img,
   #features section.invert img {
-    height: 10rem;
     margin-top: 30px;
   }
   #features section figure,

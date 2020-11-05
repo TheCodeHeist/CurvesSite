@@ -334,8 +334,9 @@ header {
       flex-direction: column-reverse;
 
       img {
-        height: 15rem;
+        height: 13rem;
         margin-top: 40px;
+        margin-right: 0;
       }
 
       figure {
@@ -379,7 +380,6 @@ header {
     section,
     section.invert {
       img {
-        height: 10rem;
         margin-top: 30px;
       }
 
