@@ -154,13 +154,18 @@ header figure figcaption {
   font-size: 30px;
 }
 
-header #bg-video {
+header .fullscreen-vid-wrap {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
+}
+
+header #bg-video {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #features section {
