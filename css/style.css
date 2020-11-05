@@ -10,10 +10,7 @@
 }
 
 body {
-  background: url("./../assets/curvesStillCropped.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+  background-color: #242429;
 }
 
 nav {
@@ -189,6 +186,22 @@ header #bg-video {
   color: #ffffff;
 }
 
+#features section.exceptional {
+  background: url("./../assets/curvesStillCropped.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#features section.exceptional img {
+  display: none;
+}
+
+#features section.exceptional figure {
+  color: #ffffff;
+  text-align: center;
+}
+
 #downloads {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +272,6 @@ header #bg-video {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background-color: #38383f7c;
   color: #ffffff;
 }
 
@@ -267,5 +279,131 @@ header #bg-video {
   font-weight: 500;
   font-size: 1.7rem;
   line-height: 50px;
+}
+
+@media only screen and (max-width: 1440px) {
+  #about p {
+    font-size: 1.3rem;
+  }
+  #downloads section.dl-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #features section figure p {
+    font-size: 30px;
+  }
+  #features section figure figcaption {
+    font-size: 15px;
+  }
+  #features section img {
+    height: 15rem;
+    border-radius: 20px;
+  }
+  header #bg-video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #about p {
+    font-size: 1rem;
+  }
+  #downloads p {
+    font-size: 2.5rem;
+  }
+  #features section img {
+    height: 10rem;
+    border-radius: 20px;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about p {
+    font-size: 0.9rem;
+    line-height: 30px;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  #downloads p {
+    font-size: 2.5rem;
+  }
+  #features section,
+  #features section.invert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #features section img,
+  #features section.invert img {
+    height: 10rem;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  #features section figure,
+  #features section.invert figure {
+    text-align: center;
+  }
+  #features section figure p,
+  #features section.invert figure p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #about p {
+    font-size: 0.9rem;
+    line-height: 30px;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  #downloads p {
+    font-size: 2.5rem;
+  }
+  #features section img,
+  #features section.invert img {
+    height: 10rem;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #features section figure,
+  #features section.invert figure {
+    text-align: center;
+  }
+  #features section figure p,
+  #features section.invert figure p {
+    font-size: 20px;
+  }
+  #features section figure figcaption,
+  #features section.invert figure figcaption {
+    line-height: normal;
+  }
+  header figure #header-logo {
+    width: 5rem;
+  }
+  header figure p {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  header figure figcaption {
+    color: #ffffff;
+    font-size: 10px;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
