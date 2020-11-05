@@ -424,5 +424,8 @@ header #bg-video {
     color: #ffffff;
     font-size: 10px;
   }
+  nav .navigators ul li {
+    padding: 10px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
