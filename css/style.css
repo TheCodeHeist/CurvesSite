@@ -343,7 +343,7 @@ header #bg-video {
   }
   #features section img,
   #features section.invert img {
-    height: 10rem;
+    height: 15rem;
     margin-top: 40px;
   }
   #features section figure,
@@ -353,6 +353,18 @@ header #bg-video {
   #features section figure p,
   #features section.invert figure p {
     font-size: 20px;
+  }
+  #features section figure figcaption,
+  #features section.invert figure figcaption {
+    line-height: normal;
+    font-size: 15px;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 7rem;
   }
 }
 
@@ -380,11 +392,6 @@ header #bg-video {
     font-size: 20px;
     line-height: normal;
   }
-  #features section figure figcaption,
-  #features section.invert figure figcaption {
-    line-height: normal;
-    font-size: 15px;
-  }
   header figure #header-logo {
     width: 5rem;
   }
@@ -396,13 +403,6 @@ header #bg-video {
   header figure figcaption {
     color: #ffffff;
     font-size: 10px;
-  }
-  nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

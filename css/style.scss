@@ -334,7 +334,7 @@ header {
       flex-direction: column-reverse;
 
       img {
-        height: 10rem;
+        height: 15rem;
         margin-top: 40px;
       }
 
@@ -344,8 +344,18 @@ header {
         p {
           font-size: 20px;
         }
+
+        figcaption {
+          line-height: normal;
+          font-size: 15px;
+        }
       }
     }
+  }
+
+  nav {
+    flex-direction: column;
+    height: 7rem;
   }
 }
 
@@ -380,11 +390,6 @@ header {
           font-size: 20px;
           line-height: normal;
         }
-
-        figcaption {
-          line-height: normal;
-          font-size: 15px;
-        }
       }
     }
   }
@@ -407,10 +412,5 @@ header {
         font-size: 10px;
       }
     }
-  }
-
-  nav {
-    flex-direction: column;
-    height: 7rem;
   }
 }
