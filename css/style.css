@@ -9,11 +9,18 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: url("./../assets/curvesStillCropped.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #38383f;
+  background-color: #242429;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -65,6 +72,17 @@ nav .navigators .download-btn {
   font-size: 14px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 nav .navigators .download-btn:hover {
@@ -124,8 +142,9 @@ header #bg-video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #features section {
@@ -140,9 +159,7 @@ header #bg-video {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #ffffff;
 }
 
 #features section figure {
@@ -170,5 +187,85 @@ header #bg-video {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   color: #ffffff;
+}
+
+#downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  background-color: #2d9cdb;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#downloads p {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#downloads section.dl-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#downloads section.dl-links a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 20rem;
+  height: 4rem;
+  margin: 10px 20px;
+  background: #38383f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  cursor: pointer;
+}
+
+#downloads section.dl-links a:hover {
+  background-color: #eb5757;
+}
+
+#about {
+  width: 100%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: #38383f7c;
+  color: #ffffff;
+}
+
+#about p {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
