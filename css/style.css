@@ -120,6 +120,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../assets/handdrawn.gif");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/handdrawn.gif");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 header figure {
@@ -152,20 +157,6 @@ header figure p {
 header figure figcaption {
   color: #ffffff;
   font-size: 30px;
-}
-
-header .fullscreen-vid-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  overflow: hidden;
-}
-
-header #bg-video {
-  min-width: 100%;
-  min-height: 100%;
 }
 
 #features section {
@@ -211,7 +202,8 @@ header #bg-video {
 }
 
 #features section.exceptional {
-  background: url("./../assets/curvesStillCropped.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../assets/curvesStillCropped.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/curvesStillCropped.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -299,7 +291,7 @@ header #bg-video {
 #about p {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 50px;
+  line-height: 40px;
   padding-left: 70px;
 }
 
@@ -333,6 +325,9 @@ header #bg-video {
     height: 10rem;
     border-radius: 20px;
     margin-right: 40px;
+  }
+  header {
+    background-position: top right 70%;
   }
 }
 
@@ -410,6 +405,9 @@ header #bg-video {
   #features section.invert figure p {
     font-size: 20px;
     line-height: normal;
+  }
+  header {
+    background-position: bottom 20% right 60%;
   }
   header figure #header-logo {
     width: 5rem;
