@@ -110,27 +110,27 @@ nav .navigators .download-btn:hover {
 header {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../assets/handdrawn.gif");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/handdrawn.gif");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
 }
 
-header figure {
+header .video-overlay {
+  position: absolute;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+header .video-overlay #bg-video {
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header .video-overlay figure {
+  position: absolute;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  bottom: 15%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -142,19 +142,23 @@ header figure {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-header figure #header-logo {
+header .video-overlay figure #header-logo {
   width: 8rem;
 }
 
-header figure p {
+header .video-overlay figure p {
   color: #ffffff;
   font-size: 50px;
   font-weight: 600;
 }
 
-header figure figcaption {
+header .video-overlay figure figcaption {
   color: #ffffff;
   font-size: 30px;
 }
@@ -326,9 +330,6 @@ header figure figcaption {
     border-radius: 20px;
     margin-right: 40px;
   }
-  header {
-    background-position: top right 70%;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -374,6 +375,15 @@ header figure figcaption {
     line-height: normal;
     font-size: 15px;
   }
+  header .video-overlay figure p {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  header .video-overlay figure figcaption {
+    color: #ffffff;
+    font-size: 20px;
+  }
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -406,20 +416,17 @@ header figure figcaption {
     font-size: 20px;
     line-height: normal;
   }
-  header {
-    background-position: bottom 20% right 60%;
+  header .video-overlay figure #header-logo {
+    width: 7rem;
   }
-  header figure #header-logo {
-    width: 5rem;
-  }
-  header figure p {
+  header .video-overlay figure p {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
   }
-  header figure figcaption {
+  header .video-overlay figure figcaption {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 20px;
   }
   nav .navigators ul li {
     padding: 10px 10px;

@@ -105,55 +105,55 @@ nav {
 header {
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   // background: url("./../assets/curvesStill.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/handdrawn.gif");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
+  // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  //   url("./../assets/handdrawn.gif");
+  // background-repeat: no-repeat;
+  // background-position: top left;
+  // background-size: cover;
+  .video-overlay {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    overflow-x: hidden;
+    width: 100%;
 
-  figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-
-    #header-logo {
-      width: 8rem;
+    #bg-video {
+      height: 100vh;
+      min-width: 100%;
+      min-height: 100%;
     }
+    figure {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      bottom: 15%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-    p {
-      color: #ffffff;
+      #header-logo {
+        width: 8rem;
+      }
 
-      font-size: 50px;
-      font-weight: 600;
-    }
+      p {
+        color: #ffffff;
 
-    figcaption {
-      color: #ffffff;
+        font-size: 50px;
+        font-weight: 600;
+      }
 
-      font-size: 30px;
+      figcaption {
+        color: #ffffff;
+
+        font-size: 30px;
+      }
     }
   }
-
-  // .fullscreen-vid-wrap {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-
-  //   width: 100vw;
-  //   height: 100%;
-  //   overflow: hidden;
-  // }
-
-  // #bg-video {
-  //   min-width: 100%;
-  //   min-height: 100%;
-  // }
 }
 
 #features {
@@ -189,7 +189,8 @@ header {
   }
 
   section.exceptional {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/curvesStillCropped.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./../assets/curvesStillCropped.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -318,8 +319,8 @@ header {
     }
   }
 
-  header{
-    background-position: top right 70%;
+  header {
+    // background-position: top right 70%;
   }
 }
 
@@ -375,6 +376,24 @@ header {
   //   }
   // }
 
+  header {
+    .video-overlay {
+      figure {
+        p {
+          color: #ffffff;
+          font-size: 35px;
+          font-weight: 600;
+        }
+
+        figcaption {
+          color: #ffffff;
+
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
   nav {
     flex-direction: column;
     height: 7rem;
@@ -416,22 +435,24 @@ header {
   }
 
   header {
-    background-position: bottom 20% right 60%;
-    figure {
-      #header-logo {
-        width: 5rem;
-      }
+    // background-position: bottom 20% right 60%;
+    .video-overlay {
+      figure {
+        #header-logo {
+          width: 7rem;
+        }
 
-      p {
-        color: #ffffff;
-        font-size: 30px;
-        font-weight: 600;
-      }
+        p {
+          color: #ffffff;
+          font-size: 35px;
+          font-weight: 600;
+        }
 
-      figcaption {
-        color: #ffffff;
+        figcaption {
+          color: #ffffff;
 
-        font-size: 10px;
+          font-size: 20px;
+        }
       }
     }
   }
