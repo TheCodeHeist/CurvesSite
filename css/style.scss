@@ -117,9 +117,12 @@ header {
     }
     figure {
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
       display: flex;
-      bottom: 27%;
+      // bottom: 27%;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -235,7 +238,7 @@ header {
 
 #about {
   width: 100%;
-  height: 15vh;
+  height: 19vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -309,13 +312,19 @@ header {
     }
   }
 
+  #about {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
   #about {
     justify-content: space-evenly;
     p {
-      font-size: 0.9rem;
+      // font-size: 0.9rem;
       line-height: 30px;
       margin: 10px 20px;
       text-align: center;
