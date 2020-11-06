@@ -103,23 +103,15 @@ nav {
 }
 
 header {
-  height: 100vh;
   width: 100%;
-  // background: url("./../assets/curvesStill.png");
-  // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  //   url("./../assets/handdrawn.gif");
-  // background-repeat: no-repeat;
-  // background-position: top left;
-  // background-size: cover;
+  height: auto;
+  padding-top: 4rem;
   .video-overlay {
-    position: absolute;
-    // top: 0;
-    // left: 0;
-    overflow-x: hidden;
     width: 100%;
+    height: auto;
+    overflow-x: hidden;
 
     #bg-video {
-      height: 100vh;
       min-width: 100%;
       min-height: 100%;
     }
@@ -127,15 +119,11 @@ header {
       position: absolute;
       width: 100%;
       display: flex;
-      bottom: 15%;
+      bottom: 27%;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       z-index: 2;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
       #header-logo {
         width: 8rem;
       }
@@ -163,21 +151,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #ffffff;
+    background-color: rgb(24, 26, 27);
+    color: #ffffff;
 
     figure {
       padding: 50px;
-      line-height: 60px;
       p {
         font-size: 40px;
+        line-height: 60px;
       }
       figcaption {
         font-size: 20px;
+        line-height: 30px;
       }
     }
 
     img {
-      height: 20rem;
+      height: 35vh;
       border-radius: 20px;
     }
   }
@@ -185,7 +175,6 @@ header {
   section.invert {
     background-color: $pitch-black;
     flex-direction: row-reverse;
-    color: #ffffff;
   }
 
   section.exceptional {
@@ -246,7 +235,7 @@ header {
 
 #about {
   width: 100%;
-  height: 30vh;
+  height: 15vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -257,10 +246,12 @@ header {
   // background-size: cover;
 
   p {
+    width: 100%;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 40px;
+    font-size: 1.25rem;
+    line-height: 25px;
     padding-left: 70px;
+    text-align: center;
   }
 
   // #about-overlay{
@@ -293,10 +284,8 @@ header {
           font-size: 15px;
         }
       }
-
       img {
-        height: 15rem;
-        border-radius: 20px;
+        margin-right: 60px;
       }
     }
   }
@@ -312,16 +301,14 @@ header {
   #features {
     section {
       img {
-        height: 10rem;
+        height: 25rem;
         border-radius: 20px;
-        margin-right: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
       }
     }
   }
 
-  header {
-    // background-position: top right 70%;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -346,11 +333,11 @@ header {
     section,
     section.invert {
       flex-direction: column-reverse;
-
+      height: 60vh;
       img {
-        height: 13rem;
-        margin-top: 40px;
-        margin-right: 0;
+        height: 18rem;
+        margin-top: 60px;
+        margin-right: 10;
       }
 
       figure {
@@ -402,6 +389,7 @@ header {
 
 @media only screen and (max-width: 425px) {
   #about {
+    height: 30vh;
     p {
       font-size: 0.9rem;
       line-height: 30px;
@@ -420,7 +408,9 @@ header {
     section,
     section.invert {
       img {
-        margin-top: 30px;
+        height: 12rem;
+        margin-top: 60px;
+        border-radius: 10px;
       }
 
       figure {
@@ -435,6 +425,79 @@ header {
   }
 
   header {
+    // background-position: bottom 20% right 60%;
+    .video-overlay {
+      figure {
+        #header-logo {
+          width: 7rem;
+        }
+
+        p {
+          color: #ffffff;
+          font-size: 35px;
+          font-weight: 600;
+        }
+
+        figcaption {
+          color: #ffffff;
+
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  nav {
+    .navigators {
+      ul {
+        li {
+          padding: 10px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #about {
+      height: 30vh;
+    p {
+      font-size: 0.9rem;
+      line-height: 30px;
+      margin: 10px 20px;
+      text-align: center;
+    }
+  }
+
+  #downloads {
+    p {
+      font-size: 2.5rem;
+    }
+  }
+
+  #features {
+
+    section,
+    section.invert {
+      img {
+        height: 9rem;
+        margin-top: 60px;
+        border-radius: 10px;
+      }
+
+      figure {
+        text-align: center;
+
+        p {
+          font-size: 20px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  header {
+
     // background-position: bottom 20% right 60%;
     .video-overlay {
       figure {
