@@ -27,6 +27,7 @@
 /* Handle on hover */
 body {
   background-color: #242429;
+  width: 100vw;
   overflow-x: hidden;
 }
 
