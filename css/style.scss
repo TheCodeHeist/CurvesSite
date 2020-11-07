@@ -271,6 +271,7 @@ header {
 // Media Queries!!
 @media only screen and (max-width: 1440px) {
   #downloads {
+    height: 70vh;
     section.dl-links {
       display: flex;
       flex-direction: column;
@@ -301,7 +302,7 @@ header {
     }
   }
 
-  #features {
+  #features { 
     section {
       img {
         height: 25rem;

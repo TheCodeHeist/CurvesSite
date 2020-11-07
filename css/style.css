@@ -302,6 +302,9 @@ header .video-overlay figure figcaption {
 }
 
 @media only screen and (max-width: 1440px) {
+  #downloads {
+    height: 70vh;
+  }
   #downloads section.dl-links {
     display: -webkit-box;
     display: -ms-flexbox;
