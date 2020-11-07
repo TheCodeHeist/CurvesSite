@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
@@ -22,7 +21,6 @@
 ::-webkit-scrollbar-thumb {
   background: #2d9cdb;
   border-radius: 4px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -33,38 +31,25 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #242429;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 4rem;
   position: fixed;
   z-index: 3;
 }
-
 nav .navigators {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 nav .navigators ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 nav .navigators ul li {
   list-style: none;
   padding: 10px 20px;
 }
-
 nav .navigators ul li a {
   color: #ffffff;
   text-decoration: none;
@@ -72,11 +57,9 @@ nav .navigators ul li a {
   font-weight: 400;
   cursor: pointer;
 }
-
 nav .navigators ul li a:hover {
   font-weight: bold;
 }
-
 nav .navigators .download-btn {
   width: 109px;
   height: 37px;
@@ -86,25 +69,16 @@ nav .navigators .download-btn {
   border-radius: 15px;
   font-weight: 800;
   font-size: 14px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   cursor: pointer;
 }
-
 nav .navigators .download-btn:hover {
   background-color: #eb5757;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
 }
 
 header {
@@ -112,58 +86,41 @@ header {
   height: auto;
   padding-top: 4rem;
 }
-
 header .video-overlay {
   width: 100%;
   height: auto;
   overflow-x: hidden;
 }
-
-header .video-overlay .darker {
+header .video-overlay #darker {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #00000059;
+  background-color: #0000008f;
 }
-
 header .video-overlay #bg-video {
   min-width: 100%;
   min-height: 100%;
 }
-
 header .video-overlay figure {
   position: absolute;
   top: 60%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 2;
 }
-
 header .video-overlay figure #header-logo {
   width: 8rem;
 }
-
 header .video-overlay figure p {
   color: #ffffff;
   font-size: 50px;
   font-weight: 600;
 }
-
 header .video-overlay figure figcaption {
   color: #ffffff;
   font-size: 30px;
@@ -172,94 +129,66 @@ header .video-overlay figure figcaption {
 #features section {
   height: 50vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: #181a1b;
   color: #ffffff;
 }
-
 #features section figure {
   padding: 50px;
 }
-
 #features section figure p {
   font-size: 40px;
   line-height: 60px;
 }
-
 #features section figure figcaption {
   font-size: 20px;
   line-height: 30px;
 }
-
+#features section figure figcaption a {
+  color: white;
+  text-decoration: none;
+}
 #features section img {
   height: 35vh;
   border-radius: 20px;
 }
-
 #features section.invert {
   background-color: #38383f;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 #features section.exceptional {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../assets/curvesStillCropped.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/curvesStillCropped.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/still.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 #features section.exceptional img {
   display: none;
 }
-
 #features section.exceptional figure {
   color: #ffffff;
   text-align: center;
 }
 
 #downloads {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 50vh;
   width: 100%;
   background-color: #2d9cdb;
   color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 #downloads p {
   font-size: 3rem;
   font-weight: 600;
 }
-
 #downloads section.dl-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #downloads section.dl-links a {
   text-decoration: none;
   color: #ffffff;
@@ -267,38 +196,35 @@ header .video-overlay figure figcaption {
   height: 4rem;
   margin: 10px 20px;
   background: #38383f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
   cursor: pointer;
 }
-
 #downloads section.dl-links a:hover {
   background-color: #eb5757;
 }
 
 #about {
   width: 100%;
-  height: 19vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: auto;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-
+#about .disclaimer {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
 #about p {
   width: 100%;
   font-weight: 500;
@@ -313,14 +239,10 @@ header .video-overlay figure figcaption {
     height: 70vh;
   }
   #downloads section.dl-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   #features section figure p {
     font-size: 30px;
   }
@@ -331,72 +253,74 @@ header .video-overlay figure figcaption {
     margin-right: 60px;
   }
 }
-
 @media only screen and (max-width: 1024px) {
   #downloads p {
     font-size: 2.5rem;
   }
+
   #features section img {
     height: 25rem;
     border-radius: 20px;
     margin-right: 20px;
     margin-left: 20px;
   }
+
   #about p {
     font-size: 0.9rem;
   }
+  #about .disclaimer {
+    font-size: 0.7rem;
+  }
 }
-
 @media only screen and (max-width: 768px) {
   #about {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   #about p {
     line-height: 30px;
-    margin: 10px 20px;
-    text-align: center;
     padding-left: 0;
+    font-size: 0.9rem;
   }
+  #about .disclaimer {
+    font-size: 0.7rem;
+  }
+
   #downloads p {
     font-size: 2.5rem;
   }
   #downloads section.dl-links a {
-    -webkit-transition: none;
     transition: none;
   }
   #downloads section.dl-links a:hover {
     background-color: #38383f;
   }
+
   #features section,
-  #features section.invert {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+#features section.invert {
+    flex-direction: column-reverse;
     height: 60vh;
   }
   #features section img,
-  #features section.invert img {
+#features section.invert img {
     height: 18rem;
     margin-top: 60px;
     margin-right: 10;
   }
   #features section figure,
-  #features section.invert figure {
+#features section.invert figure {
     text-align: center;
     margin-top: none;
   }
   #features section figure p,
-  #features section.invert figure p {
+#features section.invert figure p {
     font-size: 20px;
   }
   #features section figure figcaption,
-  #features section.invert figure figcaption {
+#features section.invert figure figcaption {
     line-height: normal;
     font-size: 15px;
   }
+
   header .video-overlay figure p {
     color: #ffffff;
     font-size: 35px;
@@ -406,50 +330,47 @@ header .video-overlay figure figcaption {
     color: #ffffff;
     font-size: 20px;
   }
+
   nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: 7rem;
   }
   nav .navigators .download-btn {
-    -webkit-transition: none;
     transition: none;
   }
   nav .navigators .download-btn:hover {
     background-color: #2d9cdb;
   }
 }
-
 @media only screen and (max-width: 425px) {
-  #about {
-    height: 30vh;
-  }
   #about p {
     font-size: 0.9rem;
     line-height: 30px;
-    margin: 10px 20px;
-    text-align: center;
   }
+  #about .disclaimer {
+    font-size: 0.7rem;
+  }
+
   #downloads p {
     font-size: 2.5rem;
   }
+
   #features section img,
-  #features section.invert img {
+#features section.invert img {
     height: 12rem;
     margin-top: 60px;
     border-radius: 10px;
   }
   #features section figure,
-  #features section.invert figure {
+#features section.invert figure {
     text-align: center;
   }
   #features section figure p,
-  #features section.invert figure p {
+#features section.invert figure p {
     font-size: 20px;
     line-height: normal;
   }
+
   header .video-overlay figure #header-logo {
     width: 7rem;
   }
@@ -462,39 +383,40 @@ header .video-overlay figure figcaption {
     color: #ffffff;
     font-size: 20px;
   }
+
   nav .navigators ul li {
     padding: 10px 10px;
   }
 }
-
 @media only screen and (max-width: 350px) {
-  #about {
-    height: 30vh;
-  }
   #about p {
     font-size: 0.9rem;
     line-height: 30px;
-    margin: 10px 20px;
-    text-align: center;
   }
+  #about .disclaimer {
+    font-size: 0.7rem;
+  }
+
   #downloads p {
     font-size: 2.5rem;
   }
+
   #features section img,
-  #features section.invert img {
+#features section.invert img {
     height: 9rem;
     margin-top: 60px;
     border-radius: 10px;
   }
   #features section figure,
-  #features section.invert figure {
+#features section.invert figure {
     text-align: center;
   }
   #features section figure p,
-  #features section.invert figure p {
+#features section.invert figure p {
     font-size: 20px;
     line-height: normal;
   }
+
   header .video-overlay figure #header-logo {
     width: 7rem;
   }
@@ -507,8 +429,8 @@ header .video-overlay figure figcaption {
     color: #ffffff;
     font-size: 20px;
   }
+
   nav .navigators ul li {
     padding: 10px 10px;
   }
 }
-/*# sourceMappingURL=style.css.map */
