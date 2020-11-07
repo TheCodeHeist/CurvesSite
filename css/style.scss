@@ -111,11 +111,11 @@ header {
     height: auto;
     overflow-x: hidden;
 
-    .darker{
+    #darker{
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #00000059;
+      background-color: #0000008f;
     }
 
     #bg-video {
@@ -171,6 +171,10 @@ header {
         line-height: 60px;
       }
       figcaption {
+        a{
+          color: white;
+          text-decoration: none;
+        }
         font-size: 20px;
         line-height: 30px;
       }
@@ -189,7 +193,7 @@ header {
 
   section.exceptional {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("./../assets/curvesStillCropped.png");
+      url("./../assets/still.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -245,16 +249,25 @@ header {
 
 #about {
   width: 100%;
-  height: 19vh;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   overflow: hidden;
   color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   // background: url("./../assets/curvesStill.png");
   // background-repeat: no-repeat;
   // background-position: center;
   // background-size: cover;
-
+  .disclaimer {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
   p {
     width: 100%;
     font-weight: 500;
@@ -263,7 +276,6 @@ header {
     padding-left: 70px;
     text-align: center;
   }
-
   // #about-overlay{
   //   width: 100%;
   //   height: 50vh;
@@ -325,6 +337,9 @@ header {
     p {
       font-size: 0.9rem;
     }
+    .disclaimer {
+      font-size: 0.7rem;
+    }
   }
 }
 
@@ -334,9 +349,12 @@ header {
     p {
       // font-size: 0.9rem;
       line-height: 30px;
-      margin: 10px 20px;
-      text-align: center;
       padding-left: 0;
+      font-size: 0.9rem;
+    }
+
+    .disclaimer {
+      font-size: 0.7rem;
     }
   }
 
@@ -426,12 +444,13 @@ header {
 
 @media only screen and (max-width: 425px) {
   #about {
-    height: 30vh;
     p {
       font-size: 0.9rem;
       line-height: 30px;
-      margin: 10px 20px;
-      text-align: center;
+    }
+
+    .disclaimer {
+      font-size: 0.7rem;
     }
   }
 
@@ -497,12 +516,13 @@ header {
 
 @media only screen and (max-width: 350px) {
   #about {
-    height: 30vh;
     p {
       font-size: 0.9rem;
       line-height: 30px;
-      margin: 10px 20px;
-      text-align: center;
+    }
+
+    .disclaimer {
+      font-size: 0.7rem;
     }
   }
 

@@ -30,12 +30,15 @@
     <!-- Header -->
     <header>
       <div class="video-overlay">
-        <div class="darker"></div>
-        <video id="bg-video" src="./assets/curves_enc.mp4" autoplay loop></video>
+        <div id="darker"></div>
+        <video id="bg-video" src="./assets/curves_enc.mp4"  autoplay loop >
+          <source src="./assets/curves_enc.mp4"/>
+          <img src="./assets/alt.png"/>
+        </video>
         <figure>
           <img src="./assets/Curves.svg" alt="Header Logo" id="header-logo" />
           <p>Curves</p>
-          <figcaption>An editor for sinusoids</figcaption>
+          <figcaption>An editor of sinusoids</figcaption>
         </figure>
       </div>
     </header>
@@ -45,9 +48,9 @@
       <!-- Features 1 -->
       <section class="secs sec1 exceptional">
         <figure>
-          <p>Sines has never been this pretty!</p>
+          <p>Sines have never been this pretty!</p>
           <figcaption>
-            Add or remove any number of Sines and Cosines. Color and adjust them
+            Add, modify or remove any number of Sines and Cosines<sup><a href="#about">1</a></sup>. Color and adjust them
             however you like!
           </figcaption>
         </figure>
@@ -59,7 +62,7 @@
         <figure>
           <p>Approximate any graph with sines!</p>
           <figcaption>
-            Fourier transform any equation and represent them with sines!
+            Plot the graph of any equation<sup><a href="#about">2</a></sup> and the sinusoids will try their best to approximate it with the summation.
           </figcaption>
         </figure>
         <img src="./assets/fourier.gif" alt="" />
@@ -70,8 +73,7 @@
         <figure>
           <p>Draw your own curves!</p>
           <figcaption>
-            Fourier transform a sad spongebob to represent them as butts! *Sorry
-            for speaking Gibberish!!!*
+            Make hand-drawn adjustments to the summation. Shape the resulting curve however you wish.<sup><a href="#about">3</a></sup>
           </figcaption>
         </figure>
         <img src="./assets/handdrawn2.gif" alt="" />
@@ -82,8 +84,8 @@
         <figure>
           <p>Trace those curvy waves!</p>
           <figcaption>
-            Enable tracers for a pleasing animation of balls tracing the
-            sinusoids!
+            Enable tracers for a pleasing animation of circles tracing the
+            sinusoids.
           </figcaption>
         </figure>
         <img src="./assets/tracers.gif" alt="" />
@@ -96,16 +98,24 @@
       <section class="dl-links">
         <a href="https://github.com/RisenFromAshes/Curves/raw/master/release/curves_win_x64.zip" target="_blank"><i class="fab fa-windows fa-2x"></i>&nbsp;&nbsp;Win x64</a>
         <a href="https://github.com/RisenFromAshes/Curves/raw/master/release/curves_win_x86.zip" target="_blank"><i class="fab fa-windows fa-2x"></i>&nbsp;&nbsp;Win x86</a>
-        <a href="./403.html" target="_blank"><i class="fab fa-ubuntu fa-2x"></i>&nbsp;&nbsp;Linux x64</a>
+        <a href="https://github.com/RisenFromAshes/Curves/raw/master/release/curves_linux_x64.zip" target="_blank"><i class="fab fa-ubuntu fa-2x"></i>&nbsp;&nbsp;Linux x64</a>
         <a href="https://github.com/RisenFromAshes/Curves/raw/master/release/curves_src.zip" target="_blank"><i class="fab fa-git-alt fa-2x"></i></i>&nbsp;&nbsp;Source Code</a>
       </section>
     </article>
 
     <!-- Footer or About -->
     <footer id="about">
+      <p class="disclaimer">
+        1. Due to rendering limitations the total number of sines is capped at 256.
+        <br />
+        2. Explicit or implicit equations of x, y. Many mathematical function including square root, absolute value, trigonometric, hyperbolic, exponential functions can be used. 
+        <br />
+        3. Hand-drawn curves will work better with more sinusoids. The paths should be continuosly in one direction ie. from left to right or right to left.
+        <br />
+      </p>
       <p>
         Curves is a simple but feature-rich graphical application written in C
-        based on the OpenGL based IGraphics library.
+        using the OpenGL based IGraphics library.
         <br />
         Developed by Ashrafur Rahman.
         <br />
