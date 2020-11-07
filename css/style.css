@@ -126,7 +126,7 @@ header .video-overlay #bg-video {
 
 header .video-overlay figure {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
