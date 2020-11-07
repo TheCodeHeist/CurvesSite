@@ -111,6 +111,13 @@ header {
     height: auto;
     overflow-x: hidden;
 
+    .darker{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #00000059;
+    }
+
     #bg-video {
       min-width: 100%;
       min-height: 100%;
