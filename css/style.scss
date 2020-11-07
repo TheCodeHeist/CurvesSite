@@ -272,6 +272,7 @@ header {
 @media only screen and (max-width: 1440px) {
   #downloads {
     height: 70vh;
+
     section.dl-links {
       display: flex;
       flex-direction: column;
@@ -302,7 +303,7 @@ header {
     }
   }
 
-  #features { 
+  #features {
     section {
       img {
         height: 25rem;
@@ -318,7 +319,6 @@ header {
       font-size: 0.9rem;
     }
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -336,6 +336,16 @@ header {
   #downloads {
     p {
       font-size: 2.5rem;
+    }
+
+    section.dl-links {
+      a {
+        transition: none;
+      }
+
+      a:hover {
+        background-color: $pitch-black;
+      }
     }
   }
 
@@ -394,6 +404,16 @@ header {
   nav {
     flex-direction: column;
     height: 7rem;
+
+    .navigators {
+      .download-btn {
+        transition: none;
+      }
+
+      .download-btn:hover {
+        background-color: $primary-color;
+      }
+    }
   }
 }
 
@@ -470,7 +490,7 @@ header {
 
 @media only screen and (max-width: 350px) {
   #about {
-      height: 30vh;
+    height: 30vh;
     p {
       font-size: 0.9rem;
       line-height: 30px;
@@ -486,7 +506,6 @@ header {
   }
 
   #features {
-
     section,
     section.invert {
       img {
@@ -507,7 +526,6 @@ header {
   }
 
   header {
-
     // background-position: bottom 20% right 60%;
     .video-overlay {
       figure {
